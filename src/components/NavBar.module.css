@@ -1,11 +1,32 @@
+/* universal styles */
+
+:root {
+    --light: #db8624;
+    --dark: #674010;
+    --accent: #2577da;
+}
+
 html {
     box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif, serif;
     margin: 0;
     padding: 0;
+    background-color: var(--light);
 }
+
+/* nav bar styles */
 
 .nav_bar {
     display: flex;
-    width: 100%;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+}
+
+.nav_bar > .earth_icon {
+    margin: 0 0.9rem;
+    font-size: 1.5rem;
+    color: var(--accent);
 }
