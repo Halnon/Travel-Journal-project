@@ -3,6 +3,7 @@ export default [
         id: 1,
         coverImg: '',
         country: '',
+        mapsLink: '',
         location: '',
         dates: '',
         description: ''
@@ -11,6 +12,7 @@ export default [
         id: 2,
         coverImg: '',
         country: '',
+        mapsLink: '',
         location: '',
         dates: '',
         description: ''
@@ -19,8 +21,21 @@ export default [
         id: 3,
         coverImg: '',
         country: '',
+        mapsLink: '',
         location: '',
         dates: '',
         description: ''
     }
 ]
+
+//template below
+
+/*
+id: 1,
+coverImg: '',
+country: '',
+mapsLink: '',
+location: '',
+dates: '',
+description: ''
+*/
