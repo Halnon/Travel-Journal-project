@@ -4,21 +4,21 @@ import './App.css'
 import data from './data.js';
 
 function App() {
-  const cardMap = data.map((item) => {
+  const CardMap = data.map((data) => {
     return <Card
-            key={item.id}
-            coverImg={item.coverImg}
-            country={item.country}
-            link={item.mapsLink}
-            location={item.location}
-            dates={item.dates}
-            description={item.description}
+            key={data.id}
+            coverImg={data.coverImg}
+            country={data.country}
+            link={data.mapsLink}
+            location={data.location}
+            dates={data.dates}
+            description={data.description}
             />
   })
   return (
     <> 
       <NavBar/>
-      <cardMap/>
+      {CardMap}
     </>
   )
 }
