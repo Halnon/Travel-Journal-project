@@ -17,15 +17,15 @@ export default [
         dates: '23 July 2023 - 3 August 2023',
         description: "Èze is a seaside commune in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region in Southeastern France. It is located on the French Riviera, 8.5 km to the northeast of Nice and 4.5 km to the west of Monaco. In 2018, Èze had a population of 2,225. Its inhabitants are known as Ezasques."
     },
-    // {
-    //     id: 3,
-    //     coverImg: '',
-    //     country: '',
-    //     mapsLink: "",
-    //     location: '',
-    //     dates: '',
-    //     description: ""
-    // }
+    {
+        id: 3,
+        coverImg: 'paris.jpg',
+        country: 'France',
+        mapsLink: "https://www.google.com/maps?sca_esv=b99a51cc48654f1f&sca_upv=1&as_st=y&imgsz=m&imgar=t%7Cxt&biw=1536&bih=737&output=search&q=paris&source=lnms&entry=mc&ved=1t:200715&ictx=111",
+        location: 'Paris',
+        dates: '1 September 2023 - 8 September 2023',
+        description: "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré."
+    }
 ]
 
 //template below
