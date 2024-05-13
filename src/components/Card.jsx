@@ -1,18 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import styles from './Card.module.css';
 
 export default function Card(props) {
     return (
         <div className={styles.card_container}>
-            <div className={styles.large_container}>
-                <img src={'#'} alt="main location" />
-                <h1>{}</h1>
-
-            </div>
-
-            <div className={styles.small_container}>
-
-            </div>
+            <img src={`../public/image/${props.coverImg}`} alt="main location" />
+            <FontAwesomeIcon icon={faLocationDot} />
+            <h3>{props.country}</h3>
+            <p>{props.mapsLink}</p>
+            <h1>{props.location}</h1>
+            <p>{props.dates}</p>
+            <p>{props.description}</p>
         </div>
     )
 }
