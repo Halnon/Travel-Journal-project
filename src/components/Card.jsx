@@ -5,18 +5,22 @@ import styles from './Card.module.css';
 
 export default function Card(props) {
     return (
-        <div className={styles.card_container}>
-            <img src={`../public/images/${props.coverImg}`} alt="main location" />
-            <div className={styles.card_info}>
-                <FontAwesomeIcon icon={faLocationDot} />
-                <h3>{props.country}</h3>
-                <p>{props.mapsLink}</p>
-                <h1>{props.location}</h1>
-                <p>{props.dates}</p>
-                <p>{props.description}</p>
+        <>
+            <div className={styles.card_container}>
+                <img src={`../public/images/${props.coverImg}`} className={styles.main_img} alt="main location" />
+                <div className={styles.card_info_container}>
+                    <div className={styles.top_row}>
+                        <FontAwesomeIcon icon={faLocationDot} className={styles.locationdot} />
+                        <h3 className={styles.country}>{props.country}</h3>
+                        <a href={props.mapsLink} className={styles.googlelink}>View on Google Maps</a>
+                    </div>
+                    <h1 className={styles.location}>{props.location}</h1>
+                    <p className={styles.dates}>{props.dates}</p>
+                    <p className={styles.description}>{props.description}</p>
+                </div>
             </div>
-
-        </div>
+            <hr />
+        </>
     )
 }
 
