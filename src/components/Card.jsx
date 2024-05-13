@@ -6,13 +6,16 @@ import styles from './Card.module.css';
 export default function Card(props) {
     return (
         <div className={styles.card_container}>
-            <img src={`../public/image/${props.coverImg}`} alt="main location" />
-            <FontAwesomeIcon icon={faLocationDot} />
-            <h3>{props.country}</h3>
-            <p>{props.mapsLink}</p>
-            <h1>{props.location}</h1>
-            <p>{props.dates}</p>
-            <p>{props.description}</p>
+            <img src={`../public/images/${props.coverImg}`} alt="main location" />
+            <div className={styles.card_info}>
+                <FontAwesomeIcon icon={faLocationDot} />
+                <h3>{props.country}</h3>
+                <p>{props.mapsLink}</p>
+                <h1>{props.location}</h1>
+                <p>{props.dates}</p>
+                <p>{props.description}</p>
+            </div>
+
         </div>
     )
 }
