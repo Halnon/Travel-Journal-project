@@ -7,7 +7,7 @@ export default function Card(props) {
     return (
         <>
             <div className={styles.card_container}>
-                <img src={`../public/images/${props.coverImg}`} className={styles.main_img} alt="main location" />
+                <img src={`../images/${props.coverImg}`} className={styles.main_img} alt="main location" />
                 <div className={styles.card_info_container}>
                     <div className={styles.top_row}>
                         <FontAwesomeIcon icon={faLocationDot} className={styles.locationdot} />
