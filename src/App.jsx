@@ -9,7 +9,7 @@ function App() {
             key={data.id}
             coverImg={data.coverImg}
             country={data.country}
-            link={data.mapsLink}
+            mapsLink={data.mapsLink}
             location={data.location}
             dates={data.dates}
             description={data.description}
